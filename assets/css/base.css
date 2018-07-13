@@ -1,0 +1,310 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-right: 15px;
+  background-color: #222222;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.headerbar {
+  /* padding */
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 95px;
+  overflow: hidden;
+  background-color: #000000;
+  background-image: url("../img/russian-world-cup-soccer-football-championship-seamless-background-grey.jpg");
+  background-repeat: repeat;
+  /* shadow effect */
+  -webkit-box-shadow: 0px 12px 22px -2px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 12px 22px -2px rgba(0,0,0,0.61);
+  box-shadow: 0px 12px 22px -2px rgba(0,0,0,0.61);
+  /* shadow should be above matchTable */
+  position: relative;
+  z-index: 1;
+}
+
+.matchTable {
+  padding: 0px, 0px, 0px, 0px;
+  width: 86%;
+  height: 30px;
+  background-color: #222222;
+  border-collapse: collapse;
+  position: relative;
+  z-index: 0;
+  border-spacing: 0px;
+  float:left;
+  overflow: hidden;
+}
+
+.matchTable, td, th {
+  margin-left: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.groupTable {
+  margin-bottom: 10px;
+  float: right;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+  width: 11%;
+  border-collapse: collapse;
+}
+
+td.stadium {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* padding */
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 85px;
+  width: 16%;
+  text-align: left;
+  float: none;
+  vertical-align: middle, text-top;
+  /* gradient */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,777777+0,000000+1,cccccc+99,000000+100,000000+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(119,119,119,1) 0%, rgba(0,0,0,0.99) 1%, rgba(204,204,204,0.01) 99%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(119,119,119,1) 0%,rgba(0,0,0,0.99) 1%,rgba(204,204,204,0.01) 99%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(119,119,119,1) 0%,rgba(0,0,0,0.99) 1%,rgba(204,204,204,0.01) 99%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+td.matchDate {
+  /* font info */
+  font-size: 11px; color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #c4b68b;
+}
+.stadiumIMG {
+  width: 95px;
+  float:left;
+  padding-right: 12px;
+}
+
+td.matchCell1 {
+  vertical-align: top;
+  overflow: hidden;
+  border-right: 3px solid #222222;
+  /* padding */
+  padding-top: 0px;
+  border-left: 2px solid black;
+  max-width: 0px;
+  /* font info */
+  font-size: 12px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#777777+0,222222+0,222222+90,222222+99,444444+100 */
+  background: rgb(119,119,119); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(119,119,119,1) 0%, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 90%, rgba(34,34,34,1) 99%, rgba(68,68,68,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(119,119,119,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 90%,rgba(34,34,34,1) 99%,rgba(68,68,68,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(119,119,119,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 90%,rgba(34,34,34,1) 99%,rgba(68,68,68,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#444444',GradientType=1 ); /* IE6-9 */
+}
+td.matchCell2 {
+  vertical-align: top;
+  overflow:hidden;
+  border-right: 3px solid #222222;
+  /* padding */
+  padding-top: 0px;
+  border-left: 3px solid black;
+  max-width: 0px;
+  /* font info */
+  font-size: 12px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #333333;
+}
+td.matchCell3 {
+  vertical-align: top;
+  overflow:hidden;
+  /* padding */
+  padding-top: 0px;
+  border-left: 2px solid black;
+  max-width: 0px;
+  /* font info */
+  font-size: 12px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#777777+0,222222+0,222222+90,222222+99,444444+100 */
+  background: rgb(119,119,119); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(119,119,119,1) 0%, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 90%, rgba(34,34,34,1) 99%, rgba(68,68,68,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(119,119,119,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 90%,rgba(34,34,34,1) 99%,rgba(68,68,68,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(119,119,119,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 90%,rgba(34,34,34,1) 99%,rgba(68,68,68,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#444444',GradientType=1 ); /* IE6-9 */
+}
+
+.matchCellTime {
+  padding-top: 2px;
+  padding-bottom: 1px;
+  height: 22px;
+  width: 100%;
+  font-size: 15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#666666+0,0e0e0e+5 */
+  background: rgb(102,102,102); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(14,14,14,1) 5%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(102,102,102,1) 0%,rgba(14,14,14,1) 5%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(102,102,102,1) 0%,rgba(14,14,14,1) 5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+/**********************************************************************************************************
+  BACKGROUND COLORS FOR EACH GROUP MATCHDAY
+ **********************************************************************************************************/
+
+.a {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #823cc4;
+  height: 100%;
+  width: 100%;
+}
+
+.b {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #557ae0;
+  height: 100%;
+  width: 100%;
+}
+
+.c {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #e9653d;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.d {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #f0d248;
+  height: 100%;
+  width: 100%;
+}
+
+.e {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #43a0ba;
+  height: 100%;
+  width: 100%;
+}
+
+.f {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #6a7755;
+  height: 100%;
+  width: 100%;
+}
+
+.g {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #7b878e;
+  height: 100%;
+  width: 100%;
+}
+
+.h {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: black;
+  padding-top: 1px; padding-left: 5px; padding-bottom: 2px;
+  background-color: #aa0920;
+  height: 100%;
+  width: 100%;
+}
+
+/*************************************************************************************************************
+ *************************************************************************************************************/
+.cityName {
+  font-size: 21px;
+}
+
+td.groupStage {
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  height:20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444444+2,000000+3,000000+21&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(68,68,68,0.98) 2%, rgba(0,0,0,0.97) 3%, rgba(0,0,0,0.79) 21%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(68,68,68,1) 0%,rgba(68,68,68,0.98) 2%,rgba(0,0,0,0.97) 3%,rgba(0,0,0,0.79) 21%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(68,68,68,1) 0%,rgba(68,68,68,0.98) 2%,rgba(0,0,0,0.97) 3%,rgba(0,0,0,0.79) 21%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+td.matchday1 {
+  border-right: 3px solid #222222;
+  /* font info */
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  height:20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444444+2,000000+3,000000+21&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(68,68,68,0.98) 2%, rgba(0,0,0,0.97) 3%, rgba(0,0,0,0.79) 21%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(68,68,68,1) 0%,rgba(68,68,68,0.98) 2%,rgba(0,0,0,0.97) 3%,rgba(0,0,0,0.79) 21%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(68,68,68,1) 0%,rgba(68,68,68,0.98) 2%,rgba(0,0,0,0.97) 3%,rgba(0,0,0,0.79) 21%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+td.standings {
+  background-color: #222222;
+  font-size: 11px; color: #c4b68b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+#social { width: 100px; height: 37px; padding-top:8px; background-color:#000; position: absolute; bottom:0; right:134px; color:#CCC;background-color: rgba(0,0,0,0.8);}
+#disclaimer { width: 50px; height: 42px; background-color:#000; position: absolute; bottom:0px; left:auto;right:83px; color:#CCC;-moz-opacity: 0.70;
+opacity: 0.70;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70); cursor:pointer; padding-top:3px}
+#loadingWin { width:450px; height:500px; background-color: rgba(0,0,0,1); position: absolute; top:71px; left:334px; visibility:hidden;
+-webkit-box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.88);
+-moz-box-shadow:    0px 7px 30px rgba(0, 0, 0, 0.88);
+ box-shadow:         0px 7px 30px rgba(0, 0, 0, 0.88);}
+
+/*********************************************************************************************************************
+THUMBNAILS FOR GENERAL BACKGROUND
+*********************************************************************************************************************/
+.thumb { cursor:pointer; }
+#thumb1 { width: 55px; height: 35px; background-color:rgba(0,0,0,0.19); position: absolute; bottom:-45px; right: 145px; padding-top:5px; padding-bottom:5px; padding-left: 5px; padding-right: 5px;}
+#thumb2 { width: 55px; height: 35px; background-color:rgba(0,0,0,0.19); position: absolute; bottom:-45px; right: 212px; padding-top:5px; padding-bottom:5px; padding-left: 5px; padding-right: 5px;}
+#thumb3 { width: 55px; height: 35px; background-color:rgba(0,0,0,0.19); position: absolute; bottom:-45px; right: 279px; padding-top:5px; padding-bottom:5px; padding-left: 5px; padding-right: 5px;}
+#thumb4 { width: 55px; height: 35px; background-color:rgba(0,0,0,0.19); position: absolute; bottom:-45px; right: 346px; padding-top:5px; padding-bottom:5px; padding-left: 5px; padding-right: 5px;}
+#thumb5 { width: 55px; height: 35px; background-color:rgba(0,0,0,0.19); position: absolute; bottom:-45px; right: 413px; padding-top:5px; padding-bottom:5px; padding-left: 5px; padding-right: 5px;}
+#thumb6 { width: 55px; height: 35px; background-color:rgba(0,0,0,0.19); position: absolute; bottom:-45px; right: 480px; padding-top:5px; padding-bottom:5px; padding-left: 5px; padding-right: 5px; }
+
+#thumbTool { width: 100px; height:24px; position:absolute; bottom: 55px; right: 155px; border: 1px #000; color: #FFF; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:11px; padding-top: 6px; opacity:0;
+-webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.9);
+-moz-box-shadow:    0px 3px 15px rgba(0, 0, 0, 0.9);
+box-shadow:         0px 3px 15px rgba(0, 0, 0, 0.9);
+background: rgb(55, 55, 53);
+background: -moz-linear-gradient(90deg, rgb(55, 55, 53) 0%, rgb(0, 0, 0) 78%);
+background: -webkit-linear-gradient(90deg, rgb(55, 55, 53) 0%, rgb(0, 0, 0) 78%);
+background: -o-linear-gradient(90deg, rgb(55, 55, 53) 0%, rgb(0, 0, 0) 78%);
+background: -ms-linear-gradient(90deg, rgb(55, 55, 53) 0%, rgb(0, 0, 0) 78%);
+background: linear-gradient(180deg, rgb(55, 55, 53) 0%, rgb(0, 0, 0) 78%);
+}
+
+#shadow { width: 250px;
+		  -webkit-box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.88);
+		  -moz-box-shadow:    0px 7px 30px rgba(0, 0, 0, 0.88);
+		  box-shadow:         0px 7px 30px rgba(0, 0, 0, 0.88);
+		  position:relative; left:75px;
+}
+.chat-bubble-arrow { border-color: #000 transparent  transparent transparent; border-style: solid; border-width: 8px; height:0; width:0; position:absolute; bottom:-15px; left:40px;
+}
